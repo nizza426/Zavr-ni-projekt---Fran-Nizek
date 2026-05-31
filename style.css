@@ -1,0 +1,174 @@
+body {
+    background-color: #08152a;
+    color: white;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #252F47;
+    padding: 15px 0;
+    top: 0;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+.logo {
+    justify-self: start;
+}
+.nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+nav {
+    justify-self: center;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    align-items: center;
+}
+
+nav a:hover {
+    color: #4da3ff;
+}
+
+#menu-toggle {
+    display: none;   
+}
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #0b1f3a, #123a6b);
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #0b1f3a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #4da3ff;
+    color: white;
+}
+
+
+.section {
+    padding: 50px 10%;
+}
+
+
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+video, iframe {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+details {
+    background: #123a6b;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #252F47;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        background: #08152a;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        padding: 10px;
+    }
+
+    #menu-toggle:checked + .hamburger + nav ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
